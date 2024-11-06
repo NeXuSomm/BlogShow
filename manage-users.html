@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Responsive BLOG Website</title>
+    <!-- CUSTOM STYLESHEET LINKED-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- ICON SCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- GOOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <img src="./images/logo-white.png">
+            </a>
+            <ul class="nav__items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="signin.html">Signin</a></li> -->
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html;">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-------------------------------END OF NAV SECTION--------------------=-------->
+    <section class="dashboard">
+        <div class="container dashboard__container">
+            <button id="show__sidebar-btn" class="sidebar__toggle"><i class="uil uil-angle-right-b"></i></button>
+            <button id="hide__sidebar-btn" class="sidebar__toggle"><i class="uil uil-angle-left-b"></i></button>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="add-post.html"><i class="uil uil-pen"></i>
+                            <h5>Add Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html"><i class="uil uil-postcard"></i>
+                            <h5>Manage Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-user.html"><i class="uil uil-user-plus"></i>
+                            <h5>Add User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-users.html" class="active"><i class="uil uil-users-alt"></i>
+                            <h5>Manage User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-category.html"><i class="uil uil-edit"></i>
+                            <h5>Add Category</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-category.html" ><i class="uil uil-list-ul"></i>
+                            <h5>Manage Category</h5>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <h2>Manage Users
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Edit</th> 
+                            <th>Delete</th>
+                            <th>Admin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OMM DAS</td>
+                            <td>Nexusussop</td>
+                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td>YES</td>
+                        </tr>  
+                        <tr>
+                            <td>SOHINI PAL</td>
+                            <td>soh_2003</td>
+                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td>YES</td>
+                        </tr>  
+                        <tr>
+                            <td>ANKIT ANUPAM</td>
+                            <td>Ghostrider09</td>
+                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td>NO</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/OMMDAS/" target="_blank"><i class="uil uil-linkedin"></i></a>
+            <a href="https://instagram.com/iamomm._?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                    class="uil uil-instagram-alt"></i></a>
+            <!-- ====================================   PERSONAL PORTFOLIO WEBSITE LINK TO BE ADDED HERE=====================
+                                        <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
+                ==================================================================================================================-->
+
+            <a href="https://github.com/NeXuSomm" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://twitter.com/OMM__DAS?t=RtsKjF0QSGHXF43xKHOY0A&s=09" target="_blank"><i
+                    class="uil uil-twitter"></i></a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="category-posts.html">Art</a></li>
+                    <li><a href="category-posts.html">Science & Technology</a></li>
+                    <li><a href="category-posts.html">Fashion</a></li>
+                    <li><a href="category-posts.html">Photography</a></li>
+                    <li><a href="category-posts.html">Food</a></li>
+                    <li><a href="category-posts.html">Wildlife</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Online Support</a></li>
+                    <li><a href="">Contact Number</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Socials</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Blogs</h4>
+                <ul>
+                    <li><a href="">Safety</a></li>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">Repair</a></li>
+                    <li><a href="">Popular</a></li>
+                    <li><a href="">Categories</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>More to Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy;OMM DAS</small>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
